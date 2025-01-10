@@ -1,0 +1,444 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body-home {
+    background: url('images/background-01-land.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.body-meals {
+    background-image: url('images/background-02-port.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========== HEADER ==========*/
+
+.header {
+    background-color: teal;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+}
+
+.header i {
+    float: left;
+    padding: 10px 0px 0px 10px;
+    color: white;
+    font-size: 30px;
+}
+
+header img {
+    width: 150px;
+    padding-top: 14px;
+    padding-right: 25px;
+}
+
+.header :hover{
+    color: #f4dbdb;
+}
+
+/*========== HOME PAGE ==========*/
+
+#home {
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    padding: 40px 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#home-logo-img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px;
+}
+
+#home-logo-text {
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+/*===== HOME PAGE MENU =====*/
+
+.home-menu p {
+    color: white;
+}
+
+.home-menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.home-menu-item:hover {
+    border: 5px solid teal;
+    transition: color 0.3s ease;
+    background-color: rgba(5, 122, 122, 0.2);
+}
+
+/*========== MEALS PAGE ==========*/
+
+#meals {
+    margin-top: 50px !important;
+}
+
+#meals h1 {
+    text-align: center;
+    color: black;
+}
+
+/*===== MEALS PAGE MENU =====*/
+
+.meals-list a {
+    text-decoration: none;
+}
+
+.meals-list-item {
+    border: 5px solid #686868fa;
+    margin: 10px;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.meals-list-item img {
+    float: left;
+    width: 100px;
+    padding: 10px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.meals-list-item h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 10px;
+    text-align: left !important;
+}
+
+.meals-list-item i {
+    font-size: 50px;
+    float: right;
+    color: #686868fa;
+    padding-right: 10px;
+}
+
+.meals-list-item p {
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin-top: -7px;
+    padding-left: 10px
+}
+
+.meals-list-item:hover {
+    border: 5px solid teal;
+    transition: color 0.3s ease;
+}
+
+.meals-list-item:hover i {
+    color: teal;
+    transition: all 0.3s ease;
+}
+
+/*========== RECIPE PAGE ==========*/
+
+#recipe {
+    padding-top: 50px;
+}
+
+/*===== RECIPE DETAILS =====*/
+
+.recipe-details img {
+    width: 100%;
+}
+
+.recipe-line {
+    position: absolute;
+    top: -10px;
+    left: 20%; 
+    background-color: #f4dbdb; 
+    transform: translateX(-80%); 
+    z-index: 1;  
+    height: calc(100vh - 50px);
+}
+
+.recipe-details h1 {
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #f4dbdb;
+    margin: 10px;
+    padding: 5px;
+}
+
+.recipe-details p, h1, label, ol {
+    color: #686868fa;
+}
+
+.recipe-details h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+    color: rgba(5, 122, 122, 0.9);
+}
+
+.recipe-details-info {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.recipe-details-info p {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.recipe-details-ingredients h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    accent-color: #f4dbdb; 
+}
+
+.recipe-details-ingredients label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-steps h2 {
+    padding-top: 20px;
+}
+
+.recipe-details-steps ol {
+    line-height: 25px;
+    padding-left: 28px;
+}
+
+.recipe-details-steps li {
+  padding: 5px 0;
+}
+
+/*========== FOOTER ==========*/
+
+footer {
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    background-color: #f4dbdb;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
+    color:  #686868fa;
+}
+
+/*========== RESPONSIVE LAYOUT ==========*/
+
+@media only screen and (min-width: 600px) {
+    #home {
+        width: 40%;
+        margin: auto;
+    }
+
+    .home-menu-item {
+        width: 80%;
+        margin: 10px auto;  
+     }
+
+    #meals {
+        width: 80%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #home {
+        width: 50%;
+        margin: auto;
+    }
+
+    .home-menu-item {
+        width: 80%;
+        margin: 10px auto;  
+    }
+
+    #meals {
+        width: 60%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .recipe-details {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .recipe-details img {
+        width: 40%;
+        height: auto;
+        position: relative; 
+        z-index: 2
+    }
+
+    .recipe-line {
+        width: 150px; 
+        transform: translateX(-100%);
+    }
+
+    .recipe-text {
+        flex: 1;
+        position: relative; 
+        z-index: 2
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #home {
+        width: 40%;
+        margin: auto;
+    }
+
+    .home-menu-item {
+        width: 80%;
+        margin: 10px auto;  
+    }
+
+    #meals {
+        width: 40%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .recipe-details {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .recipe-details img {
+        width: 40%;
+        height: auto;
+        position: relative; 
+        z-index: 2
+    }
+
+    .recipe-line {
+        width: 170px; 
+        transform: translateX(-125%); 
+    }
+
+    .recipe-text {
+        flex: 1;
+        position: relative;
+        z-index: 2
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .body-home {
+       background-image: url('images/background-01-land.png');
+    }
+
+    .body-meals {
+       background-image: url('images/background-02-land.png');
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .meals-list-item img {
+        padding: 5px;
+        max-width: 50px;
+        margin-right: 10px;
+    }
+
+    .meals-list-item h1, .meals-list-item p {
+        flex: 1;
+        word-wrap: break-word; 
+    }
+
+    .meals-list-item h1 {
+        font-size: 16px; 
+    }
+
+    .meals-list-item p {
+        font-size: 14px; 
+        margin: auto;
+    }
+
+    .meals-list-item {
+        padding: 10px; 
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .meals-list-item img {
+        max-width: 90%;
+        margin-right: 10px;
+    }
+
+    .meals-list-item i {
+        display: none;
+    }
+}
+
+
